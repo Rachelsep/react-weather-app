@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Weather />
+        <footer className="mt-1">
+          <p>
+            Created by{" "}
+            <a
+              href="https://www.linkedin.com/in/rachelsepulveda1/"
+              target="blank"
+              rel="noreferrer"
+              className="author"
+            >
+              Rachel Sepulveda.
+            </a>{" "}
+            <a
+              href="https://github.com/Rachelsep"
+              target="_blank"
+              rel="noreferrer"
+              className="author"
+            >
+              Open source code.
+            </a>{" "}
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
