@@ -20,7 +20,7 @@ export default function FormatDate(props) {
   }
 
   if (minutes < 10) {
-    minutes = `0 ${minutes}`;
+    minutes = `0${minutes}`;
   }
 
   return (

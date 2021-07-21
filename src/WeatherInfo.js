@@ -3,7 +3,7 @@ import FormatDate from "./FormatDate";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="WeatherInfo">
+    <div>
       <h1>{props.data.city}</h1>
       <ul>
         <li>
