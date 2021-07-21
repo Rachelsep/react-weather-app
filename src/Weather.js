@@ -15,10 +15,8 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
-      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
     });
-    console.log(city);
   }
 
   function search() {
@@ -40,7 +38,7 @@ export default function Weather(props) {
     return (
       <div className="container">
         <div className="weather-wrapper">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-9">
                 <input
@@ -56,7 +54,6 @@ export default function Weather(props) {
                   type="submit"
                   value="Search"
                   className="btn btn-primary w-100 "
-                  onSubmit={handleSubmit}
                 />
               </div>
             </div>

@@ -1,16 +1,16 @@
 body {
-  background: #27b1be;
+  background: #4ab1be;
   font-family: Arial, Helvetica, sans-serif;
 }
 .weather-wrapper {
   margin: 50px auto;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   border-style: solid;
   border-width: 1px;
   border-radius: 8px;
   border-color: white;
   background-color: white;
-  box-shadow: 0px 8px 20px 5px rgba(134, 130, 130, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(122, 118, 118, 0.5);
   padding: 50px 50px;
 }
 

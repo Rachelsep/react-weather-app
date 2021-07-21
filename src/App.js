@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Houston" />
-        <footer className="mt-1">
+        <Weather defaultCity="New York" />
+        <footer>
           <p>
             Created by{" "}
             <a
