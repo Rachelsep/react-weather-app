@@ -30,9 +30,9 @@ ul {
   color: #9fa2a5;
 }
 
-img {
+canvas {
   position: relative;
-  margin-top: -34px;
+  margin-top: -5px;
   width: 64px;
 }
 
