@@ -16,7 +16,9 @@ export default function Weather(props) {
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
+      icon: response.data.weather[0].icon,
     });
+    console.log(weatherData.icon);
   }
 
   function search() {
