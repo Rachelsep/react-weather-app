@@ -32,15 +32,15 @@ ul {
 
 canvas {
   position: relative;
-  margin-top: -5px;
-  width: 64px;
+  top: 7px;
 }
 
 .current-temperature {
-  font-size: 64px;
+  font-size: 65px;
   line-height: 64px;
-  margin-left: 5px;
+  margin-left: 10px;
   font-weight: 400;
+  color: #212529;
 }
 
 .units {
