@@ -38,12 +38,12 @@ canvas {
 .current-temperature {
   font-size: 65px;
   line-height: 64px;
-  margin-left: 10px;
+  margin-left: 12px;
   font-weight: 400;
   color: #212529;
 }
 
-.units {
+.fahrenheit {
   font-size: 18px;
   font-weight: 400;
   position: relative;
