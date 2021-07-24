@@ -63,6 +63,10 @@ canvas {
   color: #9fa2a5;
 }
 
-.fahrenheit:active .celsius:active {
-  color: #212529;
+.fahrenheit:visited {
+  color: #9fa2a5;
+}
+
+.fahrenheit:hover {
+  color: blue;
 }
