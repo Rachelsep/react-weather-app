@@ -38,15 +38,31 @@ canvas {
 .current-temperature {
   font-size: 65px;
   line-height: 64px;
-  margin-left: 12px;
+  margin-left: 8px;
   font-weight: 400;
   color: #212529;
 }
 
-.fahrenheit {
-  font-size: 18px;
+.units {
+  font-size: 16px;
   font-weight: 400;
   position: relative;
-  top: -34px;
   margin-left: 5px;
+  top: -35px;
+}
+
+.units a {
+  text-decoration: none;
+}
+
+.fahrenheit {
+  color: #212529;
+}
+
+.celsius {
+  color: #9fa2a5;
+}
+
+.fahrenheit:active .celsius:active {
+  color: #212529;
 }
