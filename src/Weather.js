@@ -22,12 +22,6 @@ export default function Weather(props) {
     });
   }
 
-  function search() {
-    const apiKey = "750434103a834cc2e7cdf102e6bafd91";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-    axios.get(apiUrl).then(handleWeather);
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -35,6 +29,12 @@ export default function Weather(props) {
 
   function updateCity(event) {
     setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "750434103a834cc2e7cdf102e6bafd91";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(handleWeather);
   }
 
   if (weatherData.ready) {
