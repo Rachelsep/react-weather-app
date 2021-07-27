@@ -70,3 +70,7 @@ canvas {
 .fahrenheit:hover {
   color: blue;
 }
+
+.weekly-temperature {
+  text-align: center;
+}

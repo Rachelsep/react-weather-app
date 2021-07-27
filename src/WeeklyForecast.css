@@ -1,0 +1,17 @@
+.day {
+  font-size: 18px;
+}
+
+.max-temp {
+  color: black;
+  font-size: 16px;
+}
+
+.min-temp {
+  color: #9fa2a5;
+  font-size: 16px;
+}
+
+.temperature-range {
+  margin-top: 12px;
+}
