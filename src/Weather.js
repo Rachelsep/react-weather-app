@@ -13,19 +13,19 @@ export default function Weather(props) {
       ready: true,
       coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
-      description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
-      wind: Math.round(response.data.wind.speed),
-      city: response.data.name,
+      description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
+      wind: Math.round(response.data.wind.speed),
+      city: response.data.name,
     });
   }
 
   function search() {
     const apiKey = "750434103a834cc2e7cdf102e6bafd91";
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-    axios.get(apiURL).then(handleWeather);
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(handleWeather);
   }
 
   function handleSubmit(event) {
@@ -63,10 +63,7 @@ export default function Weather(props) {
           </form>
           <WeatherInfo data={weatherData} />
           <div className="weekly-temperature  mt-4">
-            <WeeklyForecast
-              coordinates={weatherData.coordinates}
-              icon={weatherData.icon}
-            />
+            <WeeklyForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>
